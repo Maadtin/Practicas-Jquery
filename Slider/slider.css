@@ -1,0 +1,52 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body{
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: #000;
+}
+
+.slider{
+	width: 80%;
+}
+
+.slider div{
+	width: 100%;
+}
+
+.slider img{
+	max-width: 100%;
+}
+
+
+
+
+.slick-next:before, .slick-prev:before {
+	color: aqua;
+}
+
+.slick-dots li button:before {
+	color: white;
+}
+
+.slick-dots li.slick-active button:before {
+	color: aqua;
+	font-size: 7px;
+}
+
+
+/*@media(max-width: 700px){
+
+	.your-class{
+		height: 30%;
+
+
+	}
+}
+*/
