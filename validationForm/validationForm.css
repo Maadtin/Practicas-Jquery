@@ -1,0 +1,111 @@
+*{
+	box-sizing: border-box;
+}
+
+body{
+	font-family: Arial;
+}
+
+fieldset{
+	border: 2px solid crimson;
+	width: 700px;
+	margin: 0 auto;
+	padding: 1em;
+	box-shadow: -1px 1px 3px crimson;
+}
+
+legend{
+	font-size: 1.5em;
+	color: crimson;
+	text-shadow: 1px 1px 2px;
+}
+
+h1{
+	font-size: 3em;
+	text-shadow: 1px 1px 2px;
+	text-align: center;
+}
+
+label{
+	font-size: 1.1em;
+	display: block;
+	margin-bottom: 1.5em;
+}
+
+.check{
+	display: table;
+	margin: 1.5em auto;
+}
+
+input[type="submit"]{
+	padding: .5em 1.5em;
+	font-size: 1.1em;
+	border-radius: 5px;
+	border: 1px solid white;
+	box-shadow: -1px 1px 1px crimson;
+	cursor: pointer;
+	transition: all ease-in-out 0.2s;
+	background: crimson;
+	color: white;
+}
+
+
+
+select{
+	padding: .2em;
+	border-radius: 5px;
+	border: 2px solid;
+}
+
+input[type="submit"]:hover{
+	background: white;
+	color: crimson;
+}
+
+input[type="submit"]:active{
+	transform: scale(1.1);
+}
+
+label:nth-of-type(5){
+	text-align: center;
+}
+
+/*input[type="text"]:focus, input[type="number"]:focus, input[type="date"]:focus{
+	border: 2px solid steelblue;
+	border-radius: 5px;
+	padding: .2em;
+}*/
+
+input[type="text"], input[type="number"], input[type="date"]{
+	border: 2px solid;
+	border-radius: 5px;
+	padding: .2em;
+}
+
+/* formPlus */
+.mostrar{
+	margin-bottom: 1.5em;
+	display: none;
+}
+
+/* Mensajes de Error */
+
+.error {
+	color: red;
+}
+
+.valid {
+	color: green;
+}
+
+
+
+
+
+
+
+
+
+
+
+

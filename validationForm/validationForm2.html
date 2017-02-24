@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Form validation</title>
+	<link rel="stylesheet" href="validationForm.css">
+	<script src="jquery.js"></script>
+	<script src="jquery.validate.min.js"></script>
+	<script src="additional-methods.min.js"></script>
+	<script src="validationForm2.js"></script>
+</head>
+<body>
+	<h1>jQuery Form validation</h1>
+	<fieldset>
+		<legend>Formulario #2</legend>
+		<form action="" method="post" id="form">
+				<label>Nombre (obligatorio, mínimo 3 letras): <input type="text" name="nombre" id="nombre" required></label>
+				<label>Código de barras (opcional, 13 números): <input type="text" name="barras" id="barras" required></label>
+				<label>Caducidad (opcional, fecha válida): <input type="date" name="caducidad" id="caducidad" required></label>
+				<label>Estado(obligatorio, una opción): 
+					<select type="estado" name="estado" id="estado" required title="Selecciona una cosa de la lista">
+						<option value=""></option>
+						<option value="Normal">Normal</option>
+						<option value="Oferta">Oferta</option>
+						<option value="Descuento">Descuento</option>
+					</select>
+				</label>
+				<label class="check"><input type="checkbox" name="informacion" id="informacion"> Tiene información nutricional?</label>
+				<fieldset id="displayForm" class="mostrar">
+					<legend>Información nutricional</legend>
+					<label>Grasas: <input type="text"></label>
+					<label>Azucares: <input type="text"></label>
+					<label>Fibra: <input type="text"></label>
+				</fieldset>
+				<input type="submit" value="Alta producto">
+			</form>
+		</fieldset>
+
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Form validation</title>
+	<link rel="stylesheet" href="validationForm.css">
+	<script src="jquery.js"></script>
+	<script src="jquery.validate.min.js"></script>
+	<script src="additional-methods.min.js"></script>
+	<script src="validationForm1.js"></script>
+</head>
+<body>
+	<h1>jQuery Form validation</h1>
+	<fieldset>
+		<legend>Formulario #1</legend>
+		<form action="" method="post" id="form">
+				<label>Nombre (obligatorio, mínimo 3 letras): <input type="text" name="nombre" id="nombre" required></label>
+				<label>Apellido (obligatorio, mínimo 4 letras): <input type="text" name="apellido" id="apellido" required></label>
+				<label>Fecha de nacimiento (obligatorio, fecha válida): <input type="date" name="nacimiento" id="nacimiento" required></label>
+				<label>Número de PCs en casa(obligatorio, entre 0 y 10): <input type="number" name="ordenadores" id="ordenadores" required></label>
+				<label class="check">Acepto condiciones de uso (obligatorio)<input type="checkbox" name="condiciones" id="condiciones" required></label>
+				<input type="submit" value="Enviar">
+			</form>
+		</fieldset>
+</body>
+</html>
